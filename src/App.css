@@ -26,6 +26,9 @@
   /* height: 100dvh;
   width: 100dvw; */
 }
+
+
+/* Button styling */
 button{
   align-self: flex-end;
   text-align: end;
@@ -34,4 +37,31 @@ button{
   border:none;
   background: none;
   color: aliceblue;
+}
+
+
+/* Media Query for Phones (screens smaller than 600px) */
+@media screen and (max-width: 600px) {
+  .container {
+    width: 85dvw; /* Full width on small devices */
+    margin-top: 15dvh;
+    height: 40dvh; /* Increase height for better readability */
+  }
+  button {
+    margin-right: 20px; /* Align button closer on smaller screens */
+    width: 40px; /* Smaller button size */
+  }
+}
+
+/* Media Query for Small Phones (screens smaller than 400px) */
+@media screen and (max-width: 400px) {
+  .container {
+    width: 95dvw; /* Almost full width for very small screens */
+    margin-top: 10dvh;
+    height: 45dvh; /* More height for content */
+  }
+  button {
+    margin-right: 10px; /* Further reduce margin */
+    width: 35px; /* Smaller button size */
+  }
 }
